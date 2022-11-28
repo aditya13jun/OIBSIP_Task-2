@@ -1,0 +1,174 @@
+html,
+body {
+    font-family: 'Comic Neue', cursive;;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(67, 67, 67);
+}
+
+main {
+    padding: 2% 5% 0%;
+}
+
+h1.head {
+    font-size: 6em;
+}
+h4{
+    font-size: 30px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid black;
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+.base {
+    border-radius: 15px;
+    padding: 30px 30px 10px;
+    background-color: grey;
+    text-align: center;
+}
+
+.cover_image {
+    border-radius: 80px;
+    box-shadow: 7px 12px 10px 8px rgb(80 64 26);
+    padding: 10px;
+    margin: 1px;
+    background-color: goldenrod;
+    text-align: center;
+    color: rgb(80 64 26);
+    text-decoration: underline;
+}
+
+.cover_image .cover {
+    border-radius: 70px;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    border-radius: 90px;
+    box-shadow: 3px 6px 10px 8px #333;
+    text-align: left;
+    background-color: black;
+    padding: 15px;
+    font-size: 18px;
+    color: goldenrod;
+}
+
+.content ul {
+    padding: 0 20vw;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: disc;
+    list-style-position: inside;
+    color: goldenrod;
+}
+
+.content ul li {
+    font-weight: 100;
+}
+
+.content ul li strong:after {
+    content: " ☛ ";
+    font-weight: 100;
+    color: #fffe00;
+}
+
+.quotes {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+}
+
+.copyright {
+    background: navajowhite;
+}
+
+.copyright .ft-devlp {
+    color: rgb(40, 40, 40);
+    font-size: 1.3em;
+    margin: 7px 0px 10px;
+}
+
+.copyright p.ft-devlp {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.copyright p.ft-devlp a {
+    font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    text-decoration: none;
+    margin: 2px;
+}
+
+.copyright p.ft-devlp a:hover {
+    color: red;
+}
+
+a{
+    color: black;
+    
+}
+a:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(.75)
+    }
+
+    20% {
+        transform: scale(1)
+    }
+
+    40% {
+        transform: scale(.75)
+    }
+
+    60% {
+        transform: scale(1)
+    }
+
+    100%,
+    80% {
+        transform: scale(.75)
+    }
+}
+
+@media (max-width: 1200px) {
+    .content ul {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        padding: 0;
+        margin: 0;
+    }
+
+    .base {
+        margin: 5px;
+    }
+
+    .content ul {
+        padding: 10px;
+    }
+
+}
